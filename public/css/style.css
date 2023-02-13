@@ -1,122 +1,107 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
 header {
-  width: 100vw;
-  background-color: yellow;
+  width: 100%;
+  background-color: #eac926;
   padding-bottom: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
-.header-arriba {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 2rem;
   gap: 1rem;
 }
 
 .logo {
   width: 46%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1259c3;
 }
 
 .search-bar-div {
   display: flex;
   align-items: center;
-  width: 50%;
-  height: 3rem;
-  border: 1px solid grey;
+  width: 46%;
+  height: 4rem;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
   border-radius: 5px;
 }
 
 .search-bar {
-  width: calc(100% - 3rem);
-  height: 100%;
+  width: 80%;
+  height: 80%;
   font-size: 1.5rem;
   padding: 0.5rem;
   border: none;
 }
 
 .search-btn {
-  width: 3rem;
   height: 100%;
+  width: 20%;
   padding: 0.5rem;
-  border: 1px solid grey;
-  border-left: none;
+  background-color: #1259c3;
+  color: #fff;
+  border: none;
   border-radius: 0 5px 5px 0;
-  background-color: lightgrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+  background-color: #1d7bc9;
 }
 
 .fa-magnifying-glass {
-  color: grey;
+  color: #666;
   font-size: 1.5rem;
 }
 
-
-  .header-abajo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 2rem;
-  }
-
-
 .main-nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items:center;
-  gap: 0.5rem;
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: 1rem 1.3rem;
-  margin: 2rem 0;
-  border-radius: 5px;
-  background-color: yellow;
-  color: black;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 3rem;
 }
 
+
 .nav {
-  display: block;
-  gap: 0.5rem;
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
 }
 
 .links-header {
   text-decoration: none;
-  color: black;
-  font-size: 1.8rem;
+  color: #222;
+  font-size: 1.4rem;
 }
 
 .burger-menu {
-  display: none;
-  max-width: 4rem;
+  display: block;
+  max-width: 2rem;
   margin: 0 auto;
-  background-color: blue;
-  color: white;
-  font-size: 2rem;
-  padding: 1rem 1.3rem;
+  background-color: #1259c3;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1.2rem 1.5rem;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.burger-menu:hover {
+  background-color: #1d7bc9;
 }
 
 .banner {
